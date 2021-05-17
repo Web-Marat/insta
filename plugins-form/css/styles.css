@@ -1,0 +1,111 @@
+.cf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.cf7 form .cf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+	border: 2px solid #00a0d2; /* Blue */
+}
+
+.cf7 form.init .cf7-response-output {
+	display: none;
+}
+
+.cf7 form.sent .cf7-response-output {
+	border-color: #46b450; /* Green */
+}
+
+.cf7 form.failed .cf7-response-output,
+.cf7 form.aborted .cf7-response-output {
+	border-color: #dc3232; /* Red */
+}
+
+.cf7 form.spam .cf7-response-output {
+	border-color: #f56e28; /* Orange */
+}
+
+.cf7 form.invalid .cf7-response-output,
+.cf7 form.unaccepted .cf7-response-output {
+	border-color: #ffb900; /* Yellow */
+}
+
+.cf7-form-control-wrap {
+	position: relative;
+}
+
+.cf7-not-valid-tip {
+	color: #dc3232;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+}
+
+.use-floating-validation-tip .cf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #dc3232;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.cf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+span.cf7-list-item-label::before,
+span.cf7-list-item-label::after {
+	content: " ";
+}
+
+div.cf7 .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	background-image: url('../../assets/ajax-loader.gif');
+	width: 16px;
+	height: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+div.cf7 .ajax-loader.is-active {
+	visibility: visible;
+}
+
+div.cf7 div.ajax-error {
+	display: none;
+}
+
+div.cf7 .placeheld {
+	color: #888;
+}
+
+div.cf7 input[type="file"] {
+	cursor: pointer;
+}
+
+div.cf7 input[type="file"]:disabled {
+	cursor: default;
+}
+
+div.cf7 .cf7-submit:disabled {
+	cursor: not-allowed;
+}
+
+.cf7 input[type="url"],
+.cf7 input[type="email"],
+.cf7 input[type="tel"] {
+	direction: ltr;
+}
